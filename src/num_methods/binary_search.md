@@ -133,3 +133,7 @@ For example, let $f(x)=x^3 + ax^2 + bx + c$. Then $f(L) \to -\infty$ and $f(R) \
 Another noteworthy way to do binary search is, instead of maintaining an active segment, to maintain the current pointer $i$ and the current power $k$. The pointer starts at $i=L$ and then on each iteration one tests the predicate at point $i+2^k$. If the predicate is still $0$, the pointer is advanced from $i$ to $i+2^k$, otherwise it stays the same, then the power $k$ is decreased by $1$.
 
 This paradigm is widely used in tasks around trees, such as finding lowest common ancestor of two vertices or finding an ancestor of a specific vertex that has a certain height. It could also be adapted to e.g. find the $k$-th non-zero element in a Fenwick tree.
+
+## Practice Problems
+* [SPOJ - Aggressive cows](https://www.spoj.com/problems/AGGRCOW/)
+* [Codeforces - Balanced Stone Heaps](https://codeforces.com/problemset/problem/1623/C)
